@@ -1,0 +1,15 @@
+<!-- src/main/resources/templates/pagos.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pagos</title>
+</head>
+<body>
+    <h1>Pagos</h1>
+    
+        <li th:each="pago : ${pagos}">
+            Pago ID: <span th:text="${pago.id}"></span> - Monto: <span th:text="${pago.monto}"></span>
+        </li>
+    
+</body>
+</html>

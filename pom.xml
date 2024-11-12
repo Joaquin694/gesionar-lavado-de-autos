@@ -12,7 +12,7 @@
 	<artifactId>grupo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>grupo</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot</description> 
 	<url/>
 	<licenses>
 		<license/>
@@ -66,6 +66,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+                                <configuration>
+                                   <mainClass>com.proyectopoo.grupo.main.Application</mainClass>
+                                </configuration>
 			</plugin>
 		</plugins>
 	</build>

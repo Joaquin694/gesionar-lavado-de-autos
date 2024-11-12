@@ -1,0 +1,15 @@
+<!-- src/main/resources/templates/cliente.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Clientes</title>
+</head>
+<body>
+    <h1>Clientes</h1>
+    <ul>
+        <li th:each="cliente : ${clientes}">
+            Cliente ID: <span th:text="${cliente.id}"></span> - Nombre: <span th:text="${cliente.nombre}"></span>
+        </li>
+    </ul>
+</body>
+</html>
